@@ -1,4 +1,4 @@
-package kageryo.realisticmarket;
+package com.kageryo.realisticmarket;
 
 import java.util.logging.Logger;
 
