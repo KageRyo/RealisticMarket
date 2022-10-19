@@ -27,4 +27,15 @@ public class RealisticMarket extends JavaPlugin {
             this.getLogger().info("經濟系統已啟用。");
         }
     }
+    public static Economy getEconomy() {
+        return econ;
+    }
+
+    public static Permission getPermissions() {
+        return perms;
+    }
+
+    public static Chat getChat() {
+        return chat;
+    }
 }
