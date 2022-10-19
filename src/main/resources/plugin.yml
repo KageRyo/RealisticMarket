@@ -6,3 +6,7 @@ prefix: RealisticMarket
 authors: [ KageRyo ]
 description: More Realistic Minecraft Economy Plugin.
 depend: [Vault]
+commands:
+  realisticMarket:
+    description: info of RealisticMarket.
+    aliases: rm
