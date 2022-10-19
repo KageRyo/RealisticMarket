@@ -1,0 +1,7 @@
+name: RealisticMarket
+version: '${project.version}'
+main: kageryo.realisticmarket.RealisticMarket
+api-version: 1.19
+prefix: RealisticMarket
+authors: [ KageRyo ]
+description: More Realistic Minecraft Economy Plugin. 
