@@ -3,6 +3,7 @@ package com.kageryo.realisticmarket;
 import java.util.logging.Logger;
 
 import com.kageryo.realisticmarket.commands.MainCommand;
+import com.kageryo.realisticmarket.commands.TabCommand;
 import net.milkbowl.vault.chat.Chat;
 import net.milkbowl.vault.economy.Economy;
 import net.milkbowl.vault.economy.EconomyResponse;
@@ -43,6 +44,7 @@ public class RealisticMarket extends JavaPlugin {
         setupChat();
         // commands
         Bukkit.getPluginCommand("realisticmarket").setExecutor(new MainCommand());
+        Bukkit.getPluginCommand("realisticmarket").setTabCompleter(new TabCommand());
     }
 
     private boolean setupEconomy() {
