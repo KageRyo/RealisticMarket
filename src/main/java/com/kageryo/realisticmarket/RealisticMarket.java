@@ -2,11 +2,13 @@ package com.kageryo.realisticmarket;
 
 import java.util.logging.Logger;
 
+import com.kageryo.realisticmarket.commands.MainCommand;
 import net.milkbowl.vault.chat.Chat;
 import net.milkbowl.vault.economy.Economy;
 import net.milkbowl.vault.economy.EconomyResponse;
 import net.milkbowl.vault.permission.Permission;
 
+import org.bukkit.Bukkit;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
@@ -15,6 +17,7 @@ import org.bukkit.plugin.java.JavaPlugin;
 
 public class RealisticMarket extends JavaPlugin {
 
+    public static RealisticMarket realisticMarket;
     private static final Logger log = Logger.getLogger("Minecraft");
     private static Economy econ = null;
     private static Permission perms = null;
@@ -27,6 +30,10 @@ public class RealisticMarket extends JavaPlugin {
 
     @Override
     public void onEnable() {
+        realisticMarket = this;
+        // getLogger info
+        this.getLogger().info("RealisticMarket by K6Dev.");
+        // vauitAPI setup
         if (!setupEconomy() ) {
             log.severe(String.format("[%s] - Disabled due to no Vault dependency found!", getDescription().getName()));
             getServer().getPluginManager().disablePlugin(this);
@@ -34,6 +41,8 @@ public class RealisticMarket extends JavaPlugin {
         }
         setupPermissions();
         setupChat();
+        // commands
+        Bukkit.getPluginCommand("realisticmarket").setExecutor(new MainCommand());
     }
 
     private boolean setupEconomy() {

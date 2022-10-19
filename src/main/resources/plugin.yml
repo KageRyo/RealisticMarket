@@ -7,6 +7,6 @@ authors: [ KageRyo ]
 description: More Realistic Minecraft Economy Plugin.
 depend: [Vault]
 commands:
-  realisticMarket:
+  realisticmarket:
     description: info of RealisticMarket.
     aliases: rm
