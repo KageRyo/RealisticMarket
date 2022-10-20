@@ -2,8 +2,8 @@ package com.kageryo.realisticmarket;
 
 import java.util.logging.Logger;
 
-import com.kageryo.realisticmarket.commands.MainCommand;
 import com.kageryo.realisticmarket.commands.TabCommand;
+import com.kageryo.realisticmarket.commands.infoCommand;
 
 import org.bukkit.Bukkit;
 import org.bukkit.command.Command;
@@ -38,7 +38,7 @@ public final class RealisticMarket extends JavaPlugin {
             this.getLogger().info("經濟系統已啟用。");
         }
         // commands
-        Bukkit.getPluginCommand("realisticmarket").setExecutor(new MainCommand());
+        Bukkit.getPluginCommand("realisticmarket").setExecutor(new infoCommand());
         Bukkit.getPluginCommand("realisticmarket").setTabCompleter(new TabCommand());
     }
 }
