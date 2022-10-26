@@ -1,4 +1,4 @@
-package com.coderyo.realisticmarket;
+package com.coderyo.mc.realisticmarket;
 
 import java.util.logging.Logger;
 

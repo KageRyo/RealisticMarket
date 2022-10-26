@@ -1,6 +1,6 @@
 name: RealisticMarket
 version: '${project.version}'
-main: com.coderyo.realisticmarket.RealisticMarket
+main: com.coderyo.mc.realisticmarket.RealisticMarket
 api-version: 1.19
 prefix: RealisticMarket
 authors: [ KageRyo ]
