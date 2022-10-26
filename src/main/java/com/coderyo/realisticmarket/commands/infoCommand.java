@@ -1,6 +1,6 @@
-package com.kageryo.realisticmarket.commands;
+package com.coderyo.realisticmarket.commands;
 
-import com.kageryo.realisticmarket.RealisticMarket;
+import com.coderyo.realisticmarket.RealisticMarket;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;

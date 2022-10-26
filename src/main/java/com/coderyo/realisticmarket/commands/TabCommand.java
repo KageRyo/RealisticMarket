@@ -1,4 +1,4 @@
-package com.kageryo.realisticmarket.commands;
+package com.coderyo.realisticmarket.commands;
 
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandSender;
