@@ -2,8 +2,8 @@ package com.coderyo.mc.realisticmarket;
 
 import java.util.logging.Logger;
 
-import com.coderyo.realisticmarket.commands.TabCommand;
-import com.coderyo.realisticmarket.commands.infoCommand;
+import com.coderyo.mc.realisticmarket.commands.TabCommand;
+import com.coderyo.mc.realisticmarket.commands.infoCommand;
 import org.bukkit.Bukkit;
 import org.bukkit.plugin.java.JavaPlugin;
 
